@@ -39,49 +39,61 @@
           <a class="gallery__link" href="#">
             <img class="gallery__photo" src="http://placehold.it/280x280" width="280" height="280" alt="Photo">
           </a>
-          <p class="photo-caption">Народные просторы</p>
-          <p class="photo-author">Автор фото: Борис</p>
-          <span class="likes-counter">1350</span>
+          <div class="gallery__text  photo-info">
+            <p class="photo-info__caption">Народные просторы</p>
+            <p class="photo-info__author">Автор фото: Борис</p>
+            <span class="photo-info__counter">1350</span>
+          </div>
         </div>
         <div class="gallery__item">
           <a class="gallery__link" href="#">
             <img class="gallery__photo" src="http://placehold.it/280x280" width="280" height="280" alt="Photo">
           </a>
-          <p class="photo-caption">Местная растительность</p>
-          <p class="photo-author">Автор фото: Сергей</p>
-          <span class="likes-counter">143</span>
+          <div class="gallery__text  photo-info">
+            <p class="photo-info__caption">Местная растительность</p>
+            <p class="photo-info__author">Автор фото: Сергей</p>
+            <span class="photo-info__counter">143</span>
+          </div>
         </div>
         <div class="gallery__item">
           <a class="gallery__link" href="#">
             <img class="gallery__photo" src="http://placehold.it/280x280" width="280" height="280" alt="Photo">
           </a>
-          <p class="photo-caption">Дорога на север</p>
-          <p class="photo-author">Автор фото: Петр</p>
-          <span class="likes-counter">96</span>
+          <div class="gallery__text  photo-info">
+            <p class="photo-info__caption">Дорога на север</p>
+            <p class="photo-info__author">Автор фото: Петр</p>
+            <span class="photo-info__counter">96</span>
+          </div>
         </div>
         <div class="gallery__item">
           <a class="gallery__link" href="#">
             <img class="gallery__photo" src="http://placehold.it/280x280" width="280" height="280" alt="Photo">
           </a>
-          <p class="photo-caption">Мост Дьявола</p>
-          <p class="photo-author">Автор фото: Антон</p>
-          <span class="likes-counter">254</span>
+          <div class="gallery__text  photo-info">
+            <p class="photo-info__caption">Мост Дьявола</p>
+            <p class="photo-info__author">Автор фото: Антон</p>
+            <span class="photo-info__counter">254</span>
+          </div>
         </div>
-        <b class="">Все еще сомневаетесь?</b>
-        <p>Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <div class="video">
-          <video class="video__item" width="320" height="201" poster="http://placehold.it/320x201">
-            <source src="#">
-          </video>
-          <div class="video__controls">
-            <div class="video__length">
-              <div class="video__line"></div>
-              <div class="video__scroller"></div>
-            </div>
-            <div class="video__options">
-              <button class="repeat" type="button"></button>
-              <button class="subtitles" type="button"></button>
-              <button class="full-screen" type="button"></button>
+        <div class="promo">
+          <div class="promo__text">
+            <strong class="promo__title">Все еще сомневаетесь?</strong>
+            <p class="promo__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          </div>
+          <div class="video">
+            <video class="video__item" width="320" height="201" poster="http://placehold.it/320x201">
+              <source src="#">
+            </video>
+            <div class="video__controls">
+              <div class="video__length">
+                <div class="video__line"></div>
+                <div class="video__scroller"></div>
+              </div>
+              <div class="video__options">
+                <button class="repeat" type="button"></button>
+                <button class="subtitles" type="button"></button>
+                <button class="full-screen" type="button"></button>
+              </div>
             </div>
           </div>
         </div>
@@ -93,9 +105,17 @@
       </a>
       <section class="social">
         <h2 class="visually-hidden">Социальные сети</h2>
-        <a class="social__button  social__button--twitter" href="#">Twitter</a>
-        <a class="social__button  social__button--facebook" href="#">Facebook</a>
-        <a class="social__button  social__button--youtube" href="#">YouTube</a>
+        <ul class="social-links">
+          <li class="social-links__item">
+            <a class="social-links__link  social-links__link--twitter" href="#">Twitter</a>
+          </li>
+          <li class="social-links__item">
+            <a class="social-links__link  social-links__link--facebook" href="#">Facebook</a>
+          </li>
+          <li class="social-links__item">
+            <a class="social-links__link  social-links__link--youtube" href="#">YouTube</a>
+          </li>
+        </ul>
       </section>
       <section class="developer">
         <h2 class="visually-hidden">Разработчик</h2>
