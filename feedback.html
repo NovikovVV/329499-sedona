@@ -1,33 +1,33 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
-  <body class="page__body  page-feedback">
+  <body class="page-feedback">
     <header class="main-header">
+      <a class="logo" href="index.html">
+        <img class="logo__item" src="http://placehold.it/102x83" width="102" height="83" alt="City of Sedona">
+      </a>
       <nav class="main-navigation">
-        <a class="logo" href="index.html">
-          <img class="logo__item" src="http://placehold.it/102x83" width="102" height="83" alt="City of Sedona">
-        </a>
-        <button class="menu-button" type="button"></button>
-        <ul class="main-menu">
-          <li class="main-menu__item">
-            <a class="main-menu__link" href="index.html">Главная</a>
+        <button class="main-navigation__button" type="button"></button>
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="index.html">Главная</a>
           </li>
-          <li class="main-menu__item">
-            <a class="main-menu__link" href="photo.html">Фото и видео</a>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="photo.html">Фото и видео</a>
           </li>
-          <li class="main-menu__item">
-            <a class="main-menu__link">Форма отзыва</a>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link">Форма отзыва</a>
           </li>
-          <li class="main-menu__item">
-            <a class="main-menu__link" href="https://htmlacademy.ru/">Html Academy</a>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="https://htmlacademy.ru/">Html Academy</a>
           </li>
         </ul>
       </nav>
       <div class="index-logo">
-        <img class="index-logo__item" src="http://placehold.it/320x158" width="320" height="158" alt="Sedona">
+        <img class="index-logo__image" src="http://placehold.it/320x158" width="320" height="158" alt="Sedona">
       </div>
     </header>
     <main class="main">
@@ -78,9 +78,7 @@
       </form>
     </main>
     <footer class="main-footer">
-      <a class="hashtag" href="#">
-        <strong class="hashtag__item">#Visitdesona</strong>
-      </a>
+      <a class="main-footer__hashtag" href="#">#Visitdesona</a>
       <section class="social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="social-links">
@@ -104,12 +102,12 @@
       <div class="error">
         <strong class="error__title">Что-то пошло не так!</strong>
         <p class="error__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <a class="error__button" href="#">Ok</a>
+        <button class="error__button" type="button">Ok</button>
       </div>
       <div class="success">
         <strong class="success__title">Ваш отзыв отправлен!</strong>
         <p class="success__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-        <a class="success__button" href="#">Закрыть окно</a>
+        <button class="success__button" type="button">Закрыть окно</button>
       </div>
     </div>
   </body>
