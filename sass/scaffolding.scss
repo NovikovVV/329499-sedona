@@ -16,14 +16,14 @@ html {
 }
 
 *,
-*::before,
-*::after {
+*::after,
+*::before {
   box-sizing: inherit;
 }
 
+.page-feedback,
 .page-index,
-.page-photo,
-.page-feedback {
+.page-photo {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;

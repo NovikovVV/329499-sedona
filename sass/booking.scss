@@ -8,8 +8,7 @@
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  margin: 0;
-  margin-bottom: 24px;
+  margin: 0 0 24px;
 }
 
 .booking__description {
@@ -17,15 +16,12 @@
   line-height: 24px;
   font-weight: 400;
   color: #333333;
-  margin: 0
+  margin: 0;
 }
 
 .booking__link {
   display: inline-block;
-  padding-top: 17px;
-  padding-right: 47px;
-  padding-bottom: 17px;
-  padding-left: 47px;
+  padding: 17px 47px;
   text-decoration: none;
   color: #ffffff;
   font-size: 21px;
