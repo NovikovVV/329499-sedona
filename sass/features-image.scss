@@ -1,0 +1,12 @@
+.features-image {
+  border: 2px solid green;
+}
+
+.features-image:first-of-type .feature {
+  padding-top: 58px;
+  padding-bottom: 43px
+}
+
+.feature-image__picture {
+  line-height: 0;
+}

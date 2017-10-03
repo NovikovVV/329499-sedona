@@ -1,0 +1,45 @@
+.booking {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  border: 2px solid green;
+}
+
+.booking__title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.booking__description {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #333333;
+  margin: 0
+}
+
+.booking__link {
+  display: inline-block;
+  padding-top: 17px;
+  padding-right: 47px;
+  padding-bottom: 17px;
+  padding-left: 47px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  background-color: #81b3d2;
+  margin-top: 38px;
+}
+
+.booking__link:hover {
+  background-color: #669ec0;
+}
+
+.booking__link:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}

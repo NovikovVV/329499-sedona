@@ -1,0 +1,65 @@
+.feedback-form {
+  border: 2px solid green;
+}
+
+.feedback-form__text-input,
+.feedback-form__phone-input,
+.feedback-form__email-input,
+.feedback-form__textarea {
+  font: inherit;
+}
+
+.feedback-form__textarea {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: none;
+}
+
+.feedback-form__legend {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.feedback-form__text-label,
+.feedback-form__phone-label,
+.feedback-form__email-label {
+  font-size: 14px;
+  line-height: 26px;
+  color: #333333;
+}
+
+.feedback-form__radio-label,
+.feedback-form__checkbox-label {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: none;
+}
+
+.feedback-form__submit {
+  display: inline-block;
+  padding-top: 17px;
+  padding-right: 47px;
+  padding-bottom: 17px;
+  padding-left: 47px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  background-color: #81b3d2;
+  text-transform: uppercase;
+  border: none;
+}
+
+.feedback-form__submit:hover {
+  background-color: #669ec0;
+  cursor: pointer;
+}
+
+.feedback-form__submit:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}

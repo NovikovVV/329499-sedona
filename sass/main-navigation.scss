@@ -1,0 +1,42 @@
+.main-navigation {
+  border: 2px solid green;
+}
+
+.main-navigation__button {
+  width: 23px;
+  height: 22px;
+  border: none;
+  background-color: transparent;
+  background-image: url(../img/icon-menu.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.main-navigation__button:hover {
+  cursor: pointer;
+}
+
+.main-navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-navigation__link {
+  display: block;
+  background-color: #81b3d2;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+.main-navigation__link[href]:hover {
+  background-color: #669ec0;
+}
+
+.main-navigation__link[href]:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
