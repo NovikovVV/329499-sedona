@@ -1,3 +1,17 @@
 .features {
-  border: 2px solid green;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  padding-bottom: 28px;
+}
+
+@media (max-width: $tablet-width) {
+  .features {
+    padding-top: 26px;
+    padding-bottom: 14px;
+  }
 }

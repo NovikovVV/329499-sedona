@@ -8,122 +8,145 @@
   </head>
   <body class="page-index">
     <header class="main-header">
-      <nav class="main-navigation">
-        <button class="main-navigation__button" type="button"></button>
-        <ul class="main-navigation__list">
-          <li class="main-navigation__item">
-            <a class="main-navigation__link">Главная</a>
-          </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="photo.html">Фото и видео</a>
-          </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="feedback.html">Форма отзыва</a>
-          </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="https://htmlacademy.ru/">Html Academy</a>
-          </li>
-        </ul>
-      </nav>
-      <a class="logo">
-        <img class="logo__item" src="img/logo-sedona-mobile.svg" width="101.668px" height="83.984px" alt="City of Sedona">
-      </a>
-      <div class="index-logo">
-        <img class="index-logo__image" src="http://placehold.it/320x389" width="320" height="389" alt="Sedona">
+      <div class="main-header__wrapper">
+        <nav class="main-navigation">
+          <button class="main-navigation__button" type="button"></button>
+          <ul class="main-navigation__list">
+            <li class="main-navigation__item">
+              <a class="main-navigation__link  main-navigation__link--active">Главная</a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="photo.html">Фото и видео</a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="feedback.html">Форма отзыва</a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="https://htmlacademy.ru/">Html Academy</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="logo">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/logo-sedona-mobile.svg" width="102" height="83" alt="Sedona">
+            <source media="(max-width: 1199px)" srcset="img/logo-sedona-mobile.svg" width="102" height="83" alt="Sedona">
+            <img class="logo__item" src="http://placehold.it/188x96" width="188" height="96" alt="City of Sedona">
+          </picture>
+        </a>
+        <div class="index-logo">
+          <picture>
+            <source media="(max-width: 767px)" srcset="http://placehold.it/320x389" alt="Sedona">
+            <source media="(max-width: 1199px)" srcset="http://placehold.it/768x518" alt="Sedona">
+            <img class="index-logo__image" src="http://placehold.it/1200x518" alt="Sedona">
+          </picture>
+        </div>
       </div>
     </header>
     <main class="main">
-      <h1 class="page-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
-      <p class="page-description">Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
-      <section class="features">
-        <h2 class="visually-hidden">Особенности</h2>
-        <div class="features-image">
-          <div class="feature">
-            <p class="feature__title">Настоящий городок</p>
-            <b class="feature__number">№1</b>
-            <p class="feature__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+      <div class="main__wrapper">
+        <h1 class="page-title">Седона — небольшой городок в Аризоне,  заслуживающий большего!</h1>
+        <p class="page-description">Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
+        <section class="features">
+          <h2 class="visually-hidden">Особенности</h2>
+          <div class="features-image">
+            <div class="feature">
+              <p class="feature__title">Настоящий городок</p>
+              <b class="feature__number">№1</b>
+              <p class="feature__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
+            <div class="feature-image__picture">
+              <picture>
+                <source media="(max-width: 767px)" srcset="../img/main-city-mobile@1x.jpg">
+                <source media="(max-width: 1199px)" srcset="http://placehold.it/512x256">
+                <img src="http://placehold.it/800x256" alt="Real city">
+              </picture>
+            </div>
           </div>
-          <div class="feature-image__picture">
-            <img src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Home">
+          <div class="feature__wrapper">
+            <div class="feature  feature--icon  feature--icon-house">
+              <p class="feature__title">Жилье</p>
+              <p class="feature__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </div>
+            <div class="feature  feature--icon  feature--icon-burger">
+              <p class="feature__title">Еда</p>
+              <p class="feature__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </div>
+            <div class="feature  feature--icon  feature--icon-gift">
+              <p class="feature__title">Сувениры</p>
+              <p class="feature__description">Не только китайского, но и местного производства!</p>
+            </div>
           </div>
-        </div>
-        <div class="feature  feature--icon">
-          <div class="feature__icon">
-            <img src="img/icon-house.svg" width="74.695px" height="72.346px" alt="House">
+          <div class="features-image">
+            <div class="feature">
+              <p class="feature__title">Там есть мост Дьявола</p>
+              <b class="feature__number">№2</b>
+              <p class="feature__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            </div>
+            <div class="feature-image__picture">
+              <picture>
+                <source media="(max-width: 767px)" srcset="../img/main-bridge-mobile@1x.jpg">
+                <source media="(max-width: 1199px)" srcset="http://placehold.it/512x256">
+                <img src="http://placehold.it/800x256" alt="The Devil's Bridge">
+              </picture>
+            </div>
           </div>
-          <strong class="feature__title">Жилье</strong>
-          <p class="feature__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-        </div>
-        <div class="feature  feature--icon">
-          <div class="feature__icon">
-            <img src="img/icon-gift.svg" width="63px" height="75.084px" alt="Gift">
+          <div class="feature  feature--gray">
+            <p class="feature__title">Небольшая площадь</p>
+            <b class="feature__number">№3</b>
+            <p class="feature__description">Все интересные места находятся очень близко</p>
           </div>
-          <strong class="feature__title">Сувениры</strong>
-          <p class="feature__description">Не только китайского, но и местного производства!</p>
-        </div>
-        <div class="feature  feature--icon">
-          <div class="feature__icon">
-            <img src="img/icon-burger.svg" width="76.166px" height="68.959px" alt="Food">
+          <div class="feature  feature--gray">
+            <p class="feature__title">Красивая дорога</p>
+            <b class="feature__number">№4</b>
+            <p class="feature__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
-          <strong class="feature__title">Еда</strong>
-          <p class="feature__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-        </div>
-        <div class="features-image">
-          <div class="feature">
-            <p class="feature__title">Там есть мост Дьявола</p>
-            <b class="feature__number">№2</b>
-            <p class="feature__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          <div class="feature  feature--gray">
+            <p class="feature__title">Мало туристов</p>
+            <b class="feature__number">№5</b>
+            <p class="feature__description">Большинство едет в Гранд Каньон и толпится там</p>
           </div>
-          <div class="feature-image__picture">
-            <img src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="the Devil's Bridge">
+        </section>
+        <section class="booking">
+          <h2 class="booking__title">Заинтересовались?</h2>
+          <p class="booking__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <a class="booking__link" href="#">Найти гостиницу</a>
+        </section>
+        <section class="map">
+          <h2 class="visually-hidden">Карта</h2>
+          <div class="map__item">
+            <picture>
+              <source media="(max-width: 767px)" srcset="../img/bg-map-mobile@1x.jpg">
+              <source media="(max-width: 1199px)" srcset="http://placehold.it/768x350">
+              <img src="http://placehold.it/1200x350" alt="Map">
+            </picture>
           </div>
-        </div>
-        <div class="feature  feature--gray">
-          <p class="feature__title">Небольшая площадь</p>
-          <b class="feature__number">№3</b>
-          <p class="feature__description">Все интересные места находятся очень близко</p>
-        </div>
-        <div class="feature  feature--gray">
-          <p class="feature__title">Красивая дорога</p>
-          <b class="feature__number">№4</b>
-          <p class="feature__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-        </div>
-        <div class="feature  feature--gray">
-          <p class="feature__title">Мало туристов</p>
-          <b class="feature__number">№5</b>
-          <p class="feature__description">Большинство едет в Гранд Каньон и толпится там</p>
-        </div>
-      </section>
-      <section class="booking">
-        <h2 class="booking__title">Заинтересовались?</h2>
-        <p class="booking__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="booking__link" href="#">Найти гостиницу</a>
-      </section>
-      <section class="map">
-        <h2 class="visually-hidden">Карта</h2>
-        <img class="map__item" src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Map">
-      </section>
+        </section>
+      </div>
     </main>
     <footer class="main-footer">
-      <a class="main-footer__hashtag" href="#">#VisitSedona</a>
-      <section class="social">
-        <h2 class="visually-hidden">Социальные сети</h2>
-        <ul class="social-links">
-          <li class="social-links__item">
-            <a class="social-links__link  social-links__link--twitter" href="#"><span class="visually-hidden">Twitter</span></a>
-          </li>
-          <li class="social-links__item">
-            <a class="social-links__link  social-links__link--facebook" href="#"><span class="visually-hidden">Facebook</span></a>
-          </li>
-          <li class="social-links__item">
-            <a class="social-links__link  social-links__link--youtube" href="#"><span class="visually-hidden">YouTube</span></a>
-          </li>
-        </ul>
-      </section>
-      <section class="developer">
-        <h2 class="visually-hidden">Разработчик</h2>
-        <p class="developer__item">Разработано<a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">Html Academy</span></a></p>
-      </section>
+      <div class="main-footer__wrapper">
+        <a class="main-footer__hashtag" href="#">#VisitSedona</a>
+        <section class="social">
+          <h2 class="visually-hidden">Социальные сети</h2>
+          <ul class="social-links">
+            <li class="social-links__item">
+              <a class="social-links__link  social-links__link--twitter" href="#"><span class="visually-hidden">Twitter</span></a>
+            </li>
+            <li class="social-links__item">
+              <a class="social-links__link  social-links__link--facebook" href="#"><span class="visually-hidden">Facebook</span></a>
+            </li>
+            <li class="social-links__item">
+              <a class="social-links__link  social-links__link--youtube" href="#"><span class="visually-hidden">YouTube</span></a>
+            </li>
+          </ul>
+        </section>
+        <section class="developer">
+          <h2 class="visually-hidden">Разработчик</h2>
+          <p class="developer__item">Разработано
+            <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">Html Academy</span></a>
+          </p>
+        </section>
+      </div>
     </footer>
   </body>
 </html>

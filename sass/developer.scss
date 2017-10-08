@@ -1,20 +1,25 @@
 .developer {
-  margin-top: 40px;
-  border: 2px solid green;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .developer__item {
-  font-size: 14px;
-  line-height: 26px;
   margin: 0;
 }
 
 .developer__link {
   display: inline-block;
+  vertical-align: middle;
+  margin-left: 11px;
   width: 27px;
   height: 34px;
-  margin-left: 10px;
   background-image: url("../img/logo-htmlacademy.svg");
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+@media (max-width: $tablet-width) {
+  .developer {
+    margin-top: 33px;
+  }
 }

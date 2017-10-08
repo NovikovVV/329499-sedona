@@ -1,63 +1,101 @@
 .feature {
-  background-color: #81b3d2;
-  padding-top: 30px;
-  padding-right: 30px;
-  padding-bottom: 30px;
-  padding-left: 30px;
+  width: 400px;
+  background-color: $base-color;
+  padding-top: 53px;
+  padding-right: 67px;
+  padding-bottom: 58px;
+  padding-left: 67px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.feature__wrapper {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
 }
 
 .feature__title {
-  font-size: 18px;
+  font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  color: #ffffff;
-  margin: 0;
-  margin-bottom: 14px;
+  max-width: 151px;
+  margin: 0 auto;
+  margin-bottom: 10px;
 }
 
 .feature__number {
-  font-size: 14px;
-  line-height: 21px;
-  color: #ffffff;
   font-weight: 400;
-  margin-bottom: 20px;
   position: relative;
 }
 
+.feature__number::after,
+.feature__number::before {
+  position: absolute;
+  top: 8px;
+  right: -15px;
+  content: "";
+  width: 10px;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.feature__number::before {
+  left: -15px;
+}
+
 .feature__description {
-  font-size: 14px;
-  line-height: 21px;
-  color: #ffffff;
-  margin: 0;
+  margin-top: 20px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
 }
 
 .feature--icon {
+  min-height: 330px;
   background-color: #ffffff;
-  border: 2px solid green;
+  padding-top: 160px;
+}
+
+.feature--icon-house {
+  background-image: url("../img/icon-house.svg");
+  background-repeat: no-repeat;
+  background-position: center 60px;
+}
+
+.feature--icon-burger {
+  background-image: url("../img/icon-burger.svg");
+  background-repeat: no-repeat;
+  background-position: center 62px;
+}
+
+.feature--icon-gift {
+  background-image: url("../img/icon-gift.svg");
+  background-repeat: no-repeat;
+  background-position: center 56px;
+}
+
+.feature__icon {
+  line-height: 0;
 }
 
 .feature--icon .feature__title {
   color: #000000;
-  text-align: left;
 }
 
 .feature--icon .feature__description {
   color: #333333;
-  text-align: left;
 }
 
-.feature--gray {
+.feature--gray  {
   background-color: #eeeeee;
-  border: 2px solid green;
-}
-
-.feature--gray:nth-last-of-type(2) {
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 46px;
+  padding-right: 56px;
+  padding-bottom: 65px;
+  padding-left: 56px;
 }
 
 .feature--gray .feature__title {
@@ -66,10 +104,116 @@
 
 .feature--gray .feature__number {
   color: #333333;
-  font-weight: 400;
-  position: relative;
+}
+
+.feature--gray .feature__number::after,
+.feature--gray .feature__number::before {
+  background-color: #333333;
 }
 
 .feature--gray .feature__description {
   color: #333333;
+}
+
+@media (max-width: $desktop-width) {
+  .feature {
+    width: 256px;
+    padding: 0;
+    padding-top: 45px;
+    padding-right: 45px;
+    padding-bottom: 45px;
+    padding-left: 45px;
+  }
+
+  .feature__title {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  .feature__description {
+    margin-top: 20px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+
+  .feature--icon {
+    min-height: 330px;
+    background-color: #ffffff;
+    padding-top: 160px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .feature {
+    width: 100%;
+    padding-top: 55px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+  }
+
+  .feature__title {
+    max-width: 100%;
+    font-size: 18px;
+  }
+
+  .feature__description {
+    margin-top: 14px;
+  }
+
+  .feature--icon {
+    min-height: 0;
+    padding: 0;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 70px;
+    text-align: left;
+  }
+
+  .feature--icon:nth-of-type(2) {
+    padding-bottom: 36px;
+  }
+
+  .feature--icon .feature__title {
+    margin-top: 25px;
+  }
+
+  .feature--icon .feature__description {
+    margin-top: 15px;
+  }
+
+  .feature--icon:nth-of-type(2) .feature__title {
+    margin-top: 7px;
+  }
+
+  .feature--icon:nth-of-type(3) .feature__title {
+    margin: 0;
+    margin-top: 7px;
+  }
+
+  .feature--icon-burger {
+    order: 2;
+  }
+
+  .feature--icon-house {
+    background-position: 0 40px;
+  }
+
+  .feature--icon-burger {
+    background-position: 0 40px;
+  }
+
+  .feature--icon-gift {
+    background-position: 0 20px;
+  }
+
+  .feature--gray {
+    padding-top: 27px;
+    padding-bottom: 28px;
+  }
 }

@@ -1,7 +1,29 @@
 .gallery {
-  border: 2px solid green;
+  padding-top: 70px;
+  padding-bottom: 35px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.gallery__link {
+  display: block;
+  line-height: 0;
 }
 
 .gallery__item {
-  border: 2px solid green;
+  position: relative;
+  outline: 2px solid red;
+}
+
+.gallery__text {
+  outline: 2px solid green;
+  outline-offset: -3px;
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
 }

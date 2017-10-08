@@ -1,7 +1,21 @@
 .page-description {
-  font-size: 14px;
   line-height: 26px;
   color: #333333;
-  margin: 0;
-  margin-bottom: 30px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.page-photo .page-description {
+  width: 440px;
+}
+
+.page-feedback .page-description {
+  width: 445px;
+}
+
+@media (max-width: $tablet-width) {
+  .page-description {
+    width: 260px;
+    line-height: 26px;
+   }
 }

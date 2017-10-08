@@ -1,3 +1,29 @@
-.main-header {
-  border: 2px solid red;
+.main-header{
+  padding-bottom: 25px;
+}
+
+.main-header__wrapper {
+  width: 1280px;
+  padding-right: 40px;
+  padding-left: 40px;
+  margin: 0 auto;
+}
+
+.page-photo .main-header {
+  padding-bottom: 56px;
+}
+
+.page-feedback .main-header {
+  padding-bottom: 55px;
+}
+
+@media (max-width: $desktop-width) {
+  .main-header{
+    padding-bottom: 20px;
+  }
+
+  .main-header__wrapper {
+    width: auto;
+    padding: 0;
+  }
 }

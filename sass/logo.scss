@@ -1,3 +1,31 @@
 .logo {
-  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -95px;
+  outline: 2px solid red;
+  display: inline-block;
+  line-height: 0;
+}
+
+@media (max-width: $desktop-width) {
+  .logo {
+    margin-left: -50px;
+  }
+
+  .logo__item {
+    width: 102px;
+    height: 83px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .logo {
+    top: 224px;
+  }
+
+  .logo__item {
+    width: 102px;
+    height: 83px;
+  }
 }
