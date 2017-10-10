@@ -21,7 +21,7 @@
 }
 
 .page-feedback .main-footer {
-  padding-top: 80px;
+  padding-top: 51px;
 }
 
 .main-footer__hashtag {
@@ -60,12 +60,28 @@
     margin-left: 0;
     margin-right: 94px;
   }
+
+  .page-photo .main-footer {
+    padding-top: 38px;
+  }
+
+  .page-feedback .main-footer {
+    padding-top: 48px;
+  }
 }
 
 @media (max-width: $tablet-width) {
   .main-footer {
     padding-top: 9px;
     padding-bottom: 15px;
+  }
+
+  .page-photo .main-footer {
+    padding-top: 33px;
+  }
+
+  .page-feedback .main-footer {
+    padding-top: 31px;
   }
 
   .main-footer__wrapper {

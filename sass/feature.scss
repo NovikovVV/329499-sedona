@@ -16,6 +16,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   align-content: flex-start;
+  width: 100%;
 }
 
 .feature__title {
@@ -96,6 +97,7 @@
   padding-right: 56px;
   padding-bottom: 65px;
   padding-left: 56px;
+  align-self: stretch;
 }
 
 .feature--gray .feature__title {
@@ -123,6 +125,7 @@
     padding-right: 45px;
     padding-bottom: 45px;
     padding-left: 45px;
+    flex-grow: 1;
   }
 
   .feature__title {

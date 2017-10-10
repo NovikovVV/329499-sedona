@@ -26,4 +26,22 @@
     width: auto;
     padding: 0;
   }
+
+  .page-photo .main-header {
+    padding-bottom: 37px;
+  }
+
+  .page-feedback .main-header {
+    padding-bottom: 37px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .page-photo .main-header {
+    padding-bottom: 19px;
+  }
+
+  .page-feedback .main-header {
+    padding-bottom: 19px;
+  }
 }

@@ -17,7 +17,7 @@
 
 .page-feedback .main {
   padding-top: 56px;
-  padding-bottom: 81px;
+  padding-bottom: 51px;
 }
 
 @media (max-width: $desktop-width) {
@@ -29,7 +29,18 @@
     width: auto;
     padding: 0;
   }
+
+  .page-photo .main {
+    padding-top: 38px;
+    padding-bottom: 38px;
+  }
+
+  .page-feedback .main {
+    padding-top: 37px;
+    padding-bottom: 49px;
+  }
 }
+
 
 @media (max-width: $tablet-width) {
   .main {
@@ -39,5 +50,15 @@
   .main__wrapper {
     width: auto;
     padding: 0;
+  }
+
+  .page-photo .main {
+    padding-top: 19px;
+    padding-bottom: 32px;
+  }
+
+  .page-feedback .main {
+    padding-top: 19px;
+    padding-bottom: 32px;
   }
 }

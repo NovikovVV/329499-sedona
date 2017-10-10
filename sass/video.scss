@@ -6,6 +6,7 @@
 .video__item {
   position: relative;
   width: 800px;
+  height: 500px;
   margin: 0 auto;
 }
 
@@ -21,7 +22,7 @@
 .video__length {
   position: absolute;
   height: 3px;
-  width: 540px;
+  width: 67%;
   background-color: rgba(255, 255, 255, 0.2);
   bottom: 45px;
   left: 93px;
@@ -84,4 +85,33 @@
   bottom: 37px;
   right: 43px;
   cursor: pointer;
+}
+
+@media (max-width: $desktop-width) {
+  .video {
+    margin-top: 75px;
+  }
+
+  .video__item {
+    width: 648px;
+    height: 499px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .video {
+    margin-top: 36px;
+  }
+
+  .video__item {
+    width: 320px;
+    height: 201px;
+  }
+
+  .video__controls {
+    width: 280px;
+    height: 111px;
+    bottom: -66px;
+    left: 20px;
+  }
 }

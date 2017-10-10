@@ -3,9 +3,9 @@
   top: 0;
   left: 50%;
   margin-left: -95px;
-  outline: 2px solid red;
   display: inline-block;
   line-height: 0;
+  outline: 2px solid red;
 }
 
 @media (max-width: $desktop-width) {
@@ -20,10 +20,9 @@
 }
 
 @media (max-width: $tablet-width) {
-  .logo {
-    position: relative;
+  .main-navigation--open ~ .logo {
+    top: 224px;
   }
-
   .logo__item {
     width: 102px;
     height: 83px;

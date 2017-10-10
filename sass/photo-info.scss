@@ -33,3 +33,42 @@
   margin-bottom: auto;
   margin-top: auto;
 }
+
+@media (max-width: $desktop-width) {
+  .photo-info__caption {
+    color: #000000;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0;
+  }
+
+  .photo-info__author {
+    text-transform: none;
+    color: #333333;
+    line-height: 24px;
+    margin: 0;
+  }
+
+  .photo-info__counter {
+    line-height: 24px;
+    color: #000000;
+    font-weight: 700;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .photo-info {
+    flex-direction: column;
+    padding-top: 20px;
+    padding-right: 0;
+    padding-bottom: 20px;
+    padding-left: 0;
+  }
+
+  .photo-info__counter {
+    margin: 0;
+  }
+}
