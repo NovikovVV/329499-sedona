@@ -33,13 +33,13 @@
     padding-left: 60px;
   }
 
-  .gallery__item:nth-of-type(3) .gallery__text {
-    background-color: #eaeaea;
-  }
-
   .gallery__text {
     position: relative;
     background-color: #f2f2f2;
+  }
+
+  .gallery__text--gray {
+    background-color: #eaeaea;
   }
 }
 
@@ -53,10 +53,6 @@
 
   .gallery__item {
     padding-top: 23px;
-  }
-
-  .gallery__item:nth-of-type(3) .gallery__text {
-    background-color: transparent;
   }
 
   .gallery__text {
