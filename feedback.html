@@ -5,28 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
-</head>
+  </head>
   <body class="page-feedback">
     <header class="main-header">
       <div class="main-header__wrapper">
         <nav class="main-navigation  main-navigation--open">
-          <button class="main-navigation__button" type="button"></button>
+          <button class="main-navigation__button  main-navigation__button--hideout" type="button">
+            <span class="visually-hidden">Меню</span>
+          </button>
           <ul class="main-navigation__list">
-            <li class="main-navigation__item">
+            <li class="main-navigation__item" data-name="Main-page">
               <a class="main-navigation__link" href="index.html">Главная</a>
             </li>
-            <li class="main-navigation__item">
+            <li class="main-navigation__item" data-name="Photo-page">
               <a class="main-navigation__link" href="photo.html">Фото и видео</a>
             </li>
-            <li class="main-navigation__item">
+            <li class="main-navigation__item" data-name="Feedback-page">
               <a class="main-navigation__link  main-navigation__link--active">Форма отзыва</a>
             </li>
-            <li class="main-navigation__item">
+            <li class="main-navigation__item" data-name="HtmlAcademy">
               <a class="main-navigation__link" href="https://htmlacademy.ru/">Html Academy</a>
             </li>
           </ul>
         </nav>
-        <a class="logo">
+        <a class="logo" href="index.html">
           <picture>
             <source media="(max-width: 767px)" srcset="img/logo-sedona-mobile.svg" width="102" height="83" alt="Sedona">
             <source media="(max-width: 1199px)" srcset="img/logo-sedona-mobile.svg" width="102" height="83" alt="Sedona">
@@ -55,31 +57,33 @@
               <input class="feedback-form__radio-input" type="radio" name="impression" value="bad" id="radioInput2">
               <label class="feedback-form__radio-label" for="radioInput2">Скорее отрицательное</label>
               <input class="feedback-form__radio-input" type="radio" name="impression" value="undefined" id="radioInput3">
-              <label class="feedback-form__radio-label" for="radioInput3">Затрудняюсь ответить</label>
+              <label class="feedback-form__radio-label  feedback-form__radio-label--no-margin" for="radioInput3">Затрудняюсь ответить</label>
             </div>
             <div class="feedback-form__fieldset  feedback-form__fieldset--user-info">
               <div class="feedback-form__legend">Представьтесь:</div>
-              <label class="feedback-form__text-label" for="name">Имя:
-							  <input class="feedback-form__text-input" type="text" name="name" value="Петр" id="name" placeholder="Ваше имя" required>
-							</label>
-              <label class="feedback-form__text-label" for="secondName">Фамилия:
-							  <input class="feedback-form__text-input" type="text" name="secondName" value="Иванов" id="secondName" placeholder="Ваша фамилия" required>
-							</label>
-              <label class="feedback-form__text-label" for="patronymic">Отчество:
-							  <input class="feedback-form__text-input" type="text" name="patronymic" value="Александрович" id="patronymic" placeholder="Ваше отчество">
-							</label>
+              <label class="feedback-form__text-label" for="name">Имя*:
+                <input class="feedback-form__text-input" type="text" name="name" value="Петр" id="name" placeholder="Ваше имя" required>
+              </label>
+              <label class="feedback-form__text-label" for="secondName">Фамилия*:
+                <input class="feedback-form__text-input" type="text" name="secondName" value="Иванов" id="secondName" placeholder="Ваша фамилия" required>
+              </label>
+              <label class="feedback-form__text-label  feedback-form__text-label--no-margin" for="patronymic">Отчество:
+                <input class="feedback-form__text-input" type="text" name="patronymic" value="Александрович" id="patronymic" placeholder="Ваше отчество">
+              </label>
             </div>
             <div class="feedback-form__fieldset  feedback-form__fieldset--contacts-info">
               <div class="feedback-form__legend">Контактная информация:</div>
-              <label class="feedback-form__phone-label" for="userPhone">Телефон:
-							  <input class="feedback-form__phone-input" type="tel" name="userPhone" value="" id="userPhone" placeholder="Введите телефон" required>
-							</label>
-              <label class="feedback-form__email-label" for="userEmail">Электронная почта:
-							  <input class="feedback-form__email-input" type="email" name="userEmail" value="" id="userEmail" placeholder="Введите e-mail" required>
-							</label>
+              <label class="feedback-form__phone-label" for="userPhone">Телефон*:
+                <input class="feedback-form__phone-input" type="tel" name="userPhone" value="" id="userPhone" placeholder="Введите телефон" required>
+              </label>
+              <label class="feedback-form__email-label" for="userEmail">Электронная почта*:
+                <input class="feedback-form__email-input" type="email" name="userEmail" value="" id="userEmail" placeholder="Введите e-mail" required>
+              </label>
             </div>
             <div class="feedback-form__fieldset  feedback-form__fieldset--place">
-              <div class="feedback-form__legend">Посещенные достопримечательности:</div>
+              <div class="feedback-form__legend">Посещенные
+                <span class="break-row">достопримечательности:</span>
+              </div>
               <input class="feedback-form__checkbox-input" type="checkbox" name="place" value="Devils bridge" id="checkboxInput1" checked>
               <label class="feedback-form__checkbox-label" for="checkboxInput1">Мост Дьявола</label>
               <input class="feedback-form__checkbox-input" type="checkbox" name="place" value="Slide Park" id="checkboxInput2" checked>

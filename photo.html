@@ -5,28 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
-</head>
+  </head>
   <body class="page-photo">
     <header class="main-header">
       <div class="main-header__wrapper">
         <nav class="main-navigation  main-navigation--open">
-          <button class="main-navigation__button" type="button"></button>
+          <button class="main-navigation__button  main-navigation__button--hideout" type="button">
+            <span class="visually-hidden">Меню</span>
+          </button>
           <ul class="main-navigation__list">
-            <li class="main-navigation__item">
+            <li class="main-navigation__item" data-name="Main-page">
               <a class="main-navigation__link" href="index.html">Главная</a>
             </li>
-            <li class="main-navigation__item">
+            <li class="main-navigation__item" data-name="Photo-page">
               <a class="main-navigation__link  main-navigation__link--active">Фото и видео</a>
             </li>
-            <li class="main-navigation__item">
+            <li class="main-navigation__item" data-name="Feedback-page">
               <a class="main-navigation__link" href="feedback.html">Форма отзыва</a>
             </li>
-            <li class="main-navigation__item">
+            <li class="main-navigation__item" data-name="HtmlAcademy">
               <a class="main-navigation__link" href="https://htmlacademy.ru/">Html Academy</a>
             </li>
           </ul>
         </nav>
-        <a class="logo">
+        <a class="logo" href="index.html">
           <picture>
             <source media="(max-width: 767px)" srcset="img/logo-sedona-mobile.svg" width="102" height="83" alt="Sedona">
             <source media="(max-width: 1199px)" srcset="img/logo-sedona-mobile.svg" width="102" height="83" alt="Sedona">
@@ -48,7 +50,7 @@
         <p class="page-description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
         <section class="gallery">
           <h2 class="visually-hidden">Галлерея</h2>
-          <div class="gallery__item  gallery__item--grow">
+          <div class="gallery__item">
             <a class="gallery__link" href="#">
               <picture>
                 <source media="(max-width: 767px)" srcset="img/photo-sunset-mobile@1x.jpg">
@@ -88,7 +90,7 @@
                 <img class="gallery__photo" src="http://placehold.it/400x267" alt="Photo">
               </picture>
             </a>
-            <div class="gallery__text  photo-info">
+            <div class="gallery__text  gallery__text--gray  photo-info">
               <div class="photo-info__wrapper">
                 <p class="photo-info__caption">Дорога на север</p>
                 <p class="photo-info__author">Автор фото: Петр</p>
