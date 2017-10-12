@@ -1,3 +1,117 @@
 .video {
-  border: 2px solid green;
+  line-height: 0;
+  margin-top: 70px;
+}
+
+.video__item {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.video__controls {
+  position: absolute;
+  bottom: 0;
+  height: 93px;
+  width: 100%;
+  outline-offset: -3px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.video__length {
+  position: absolute;
+  height: 3px;
+  width: 67%;
+  background-color: rgba(255, 255, 255, 0.2);
+  bottom: 45px;
+  left: 93px;
+}
+
+.video__scroller {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  bottom: -3px;
+  left: 112px;
+  cursor: pointer;
+}
+
+.video__options {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.repeat {
+  width: 16px;
+  height: 20px;
+  background-color: transparent;
+  background-image: url("../img/icon-video-replay.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: none;
+  position: absolute;
+  bottom: 38px;
+  left: 35px;
+  cursor: pointer;
+}
+
+.subtitles {
+  width: 32px;
+  height: 20px;
+  background-color: transparent;
+  background-image: url("../img/icon-video-subtitles.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: none;
+  position: absolute;
+  bottom: 37px;
+  right: 94px;
+  cursor: pointer;
+}
+
+.full-screen {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  background-image: url("../img/icon-video-fullscreen.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: none;
+  position: absolute;
+  bottom: 37px;
+  right: 43px;
+  cursor: pointer;
+}
+
+@media (max-width: $desktop-width) {
+  .video {
+    margin-top: 75px;
+  }
+
+  .video__item {
+    width: 648px;
+    height: 499px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .video {
+    margin-top: 36px;
+  }
+
+  .video__item {
+    width: 320px;
+    height: 201px;
+  }
+
+  .video__controls {
+    width: 280px;
+    height: 111px;
+    bottom: -66px;
+    left: 20px;
+  }
 }

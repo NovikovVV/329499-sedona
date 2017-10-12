@@ -1,3 +1,10 @@
 .map {
-  border: 2px solid green;
+  padding-top: 33px;
+  line-height: 0;
+}
+
+@media (max-width: $desktop-width) {
+  .map {
+    padding-top: 25px;
+  }
 }

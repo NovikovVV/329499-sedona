@@ -1,29 +1,3 @@
 .error {
-  border: 2px solid red;
-}
-
-.error__button {
-  display: inline-block;
-  padding-top: 17px;
-  padding-right: 47px;
-  padding-bottom: 17px;
-  padding-left: 47px;
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
-  background-color: #81b3d2;
-  text-transform: uppercase;
-  border: none;
-}
-
-.error__button:hover {
-  background-color: #669ec0;
-  cursor: pointer;
-}
-
-.error__button:active {
-  background-color: #5496bd;
-  color: rgba(255, 255, 255, 0.3);
+  display: none;
 }

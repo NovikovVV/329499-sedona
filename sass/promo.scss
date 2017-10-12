@@ -1,11 +1,45 @@
+.promo {
+  text-align: center;
+  width: 100%;
+  padding-top: 35px;
+}
+
 .promo__title {
-  font-size: 18px;
+  font-size: 30px;
   line-height: 26px;
-  font-weight: bold;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .promo__description {
-  font-size: 14px;
   line-height: 24px;
   color: #333333;
+  margin: 0 auto;
+  width: 420px;
+}
+
+@media (max-width: $desktop-width) {
+  .promo {
+    padding-top: 33px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .promo {
+    padding-top: 17px;
+    padding-bottom: 66px;
+  }
+
+  .promo__title {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 25px;
+  }
+
+  .promo__description {
+    width: 100%;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
 }

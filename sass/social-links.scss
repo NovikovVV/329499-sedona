@@ -2,30 +2,25 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  line-height: 0;
 }
 
 .social-links__item {
   display: inline-block;
+  vertical-align: top;
+  margin-right: 3px;
 }
 
-.social-links__item:not(:last-of-type) {
-  margin-right: 2px;
+.social-links__item:last-of-type {
+  margin-right: 0;
 }
 
 .social-links__link {
+  display: block;
   width: 46px;
   height: 48px;
-  display: block;
-  background-color: #98c1da;
-}
-
-.social-links__link:hover {
-  background-color: #669ec0;
-}
-
-.social-links__link:active {
-  background-color: #5496bd;
+  background-color: $base-color;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .social-links__link--twitter {
@@ -44,4 +39,12 @@
   background-image: url("../img/icon-youtube.svg");
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.social-links__link:hover {
+  background-color: #669ec0;
+}
+
+.social-links__link:active {
+  background-color: #5496bd;
 }

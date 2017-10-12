@@ -26,11 +26,16 @@ html {
 .page-index,
 .page-photo {
   font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
   color: #000000;
   font-style: normal;
   font-weight: 400;
   min-width: 320px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
