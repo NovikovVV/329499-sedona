@@ -5,25 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
-  </head>
+</head>
   <body class="page-index">
     <header class="main-header">
       <div class="main-header__wrapper">
-        <nav class="main-navigation  main-navigation--open">
-          <button class="main-navigation__button  main-navigation__button--hideout" type="button">
-            <span class="visually-hidden">Меню</span>
-          </button>
+        <nav class="main-navigation">
+          <button class="main-navigation__button" type="button"></button>
           <ul class="main-navigation__list">
-            <li class="main-navigation__item" data-name="Main-page">
+            <li class="main-navigation__item">
               <a class="main-navigation__link  main-navigation__link--active">Главная</a>
             </li>
-            <li class="main-navigation__item" data-name="Photo-page">
+            <li class="main-navigation__item">
               <a class="main-navigation__link" href="photo.html">Фото и видео</a>
             </li>
-            <li class="main-navigation__item" data-name="Feedback-page">
+            <li class="main-navigation__item">
               <a class="main-navigation__link" href="feedback.html">Форма отзыва</a>
             </li>
-            <li class="main-navigation__item" data-name="HtmlAcademy">
+            <li class="main-navigation__item">
               <a class="main-navigation__link" href="https://htmlacademy.ru/">Html Academy</a>
             </li>
           </ul>
@@ -60,7 +58,7 @@
               <picture>
                 <source media="(max-width: 767px)" srcset="img/main-city-mobile@1x.jpg">
                 <source media="(max-width: 1199px)" srcset="http://placehold.it/512x256">
-                <img src="http://placehold.it/800x256" alt="Real city">
+                <img class="feature-image__photo" src="http://placehold.it/800x256" alt="Real city">
               </picture>
             </div>
           </div>
@@ -79,7 +77,7 @@
             </div>
           </div>
           <div class="features-image">
-            <div class="feature  feature--order">
+            <div class="feature">
               <p class="feature__title">Там есть мост Дьявола</p>
               <b class="feature__number">№2</b>
               <p class="feature__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
