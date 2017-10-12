@@ -71,6 +71,8 @@
   background-image: url("../img/icon-burger.svg");
   background-repeat: no-repeat;
   background-position: center 62px;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 .feature--icon-gift {
@@ -212,5 +214,7 @@
   .feature--gray {
     padding-top: 27px;
     padding-bottom: 28px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }

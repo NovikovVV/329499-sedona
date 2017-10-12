@@ -1,0 +1,9 @@
+.break-row {
+  display: block;
+}
+
+@media (max-width: $tablet-width) {
+  .break-row {
+    display: inline;
+  }
+}
