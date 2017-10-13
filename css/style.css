@@ -1695,7 +1695,9 @@ img {
   margin-bottom: 73px; }
 
 .feedback-form__fieldset--contacts-info .feedback-form__legend::before,
-.feedback-form__fieldset--contacts-info .feedback-form__legend::after {
+.feedback-form__fieldset--contacts-info .feedback-form__legend::after ,
+.feedback-form__fieldset--emotions .feedback-form__legend::before,
+.feedback-form__fieldset--emotions .feedback-form__legend::after {
   content: "";
   position: absolute;
   width: 280px;
@@ -1704,7 +1706,8 @@ img {
   top: 11px;
   right: 0; }
 
-.feedback-form__fieldset--contacts-info .feedback-form__legend::after {
+.feedback-form__fieldset--contacts-info .feedback-form__legend::after,
+.feedback-form__fieldset--emotions .feedback-form__legend::after {
   left: 0; }
 
 .feedback-form__phone-label {
@@ -1731,7 +1734,7 @@ img {
   padding-top: 16px;
   padding-bottom: 16px;
   padding-left: 21px;
-  padding-right: 63px;
+  padding-right: 79px;
   border: none;
   background-color: #f2f2f2;
   margin-left: 17px;
@@ -1750,6 +1753,20 @@ img {
 .feedback-form__fieldset--place .feedback-form__legend {
   text-align: center; }
 
+
+.feedback-form__fieldset--place .feedback-form__legend::before,
+.feedback-form__fieldset--place .feedback-form__legend::after {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 1px;
+  background-color: #dbdbdb;
+  top: 20px;
+  right: 0; }
+
+.feedback-form__fieldset--place .feedback-form__legend::after {
+  left: 0; }
+	
 .feedback-form__checkbox-label::before {
   position: absolute;
   content: "";
@@ -1788,8 +1805,9 @@ img {
   left: 785px; }
 
 .feedback-form__fieldset--emotions {
-  width: 100%; }
-
+  width: 100%;
+  text-align: center;	}
+	
 .feedback-form__radio-label--no-margin,
 .feedback-form__text-label--no-margin {
   margin: 0; }
