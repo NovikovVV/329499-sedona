@@ -85,11 +85,37 @@
     top: 16px;
     width: 23px;
     height: 22px;
-    background-color: red;
+    background-color: transparent;
     border: none;
     padding: 0;
     display: block;
   }
+		
+	.main-navigation__button::before,
+	.main-navigation__button::after {
+	  position: absolute;
+		content: "";
+		top: 0;
+		left: 0;
+		width: 23px;
+		height: 4px;
+		background-color: #81b3d2;
+		box-shadow: 0 9px 0 0 #81b3d2, 0 18px 0 0 #81b3d2;
+	}
+	
+	.main-navigation--open .main-navigation__button::before,
+  .main-navigation--open .main-navigation__button::after	{
+	  background-color: #ffffff;
+		transform: rotate(45deg);
+		top: 8px;
+		box-shadow: none;
+		width: 30px;
+		left: -4px;
+	}
+	
+	.main-navigation--open .main-navigation__button::after {
+	  transform: rotate(-45deg);
+	}
 
   .main-navigation__button--hideout {
     display: none;
