@@ -217,4 +217,26 @@
     padding-left: 32px;
     padding-right: 32px;
   }
+
+  .feature--border {
+    position: relative;
+  }
+
+  .feature--border::before,
+  .feature--border::after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 1px;
+    background-color: #d6d6d6;
+    left: 20px;
+  }
+
+  .feature--border::before {
+    top: -1px;
+  }
+
+  .feature--border::after {
+    bottom: 0;
+  }
 }
