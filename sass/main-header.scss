@@ -23,7 +23,7 @@
   }
 
   .main-header__wrapper {
-    width: auto;
+    width: 768px;
     padding: 0;
   }
 
@@ -37,6 +37,10 @@
 }
 
 @media (max-width: $tablet-width) {
+  .main-header__wrapper {
+    width: 320px;
+  }
+
   .page-photo .main-header {
     padding-bottom: 19px;
   }

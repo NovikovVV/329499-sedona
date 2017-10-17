@@ -51,7 +51,7 @@
 
 @media (max-width: $desktop-width) {
   .main-footer__wrapper {
-    width: auto;
+    width: 768px;
     padding-left: 50px;
     padding-right: 60px;
   }
@@ -77,15 +77,15 @@
   }
 
   .page-photo .main-footer {
-    padding-top: 33px;
+    padding-top: 34px;
   }
 
   .page-feedback .main-footer {
-    padding-top: 31px;
+    padding-top: 32px;
   }
 
   .main-footer__wrapper {
-    width: auto;
+    width: 320px;
     padding: 0;
     flex-direction: column;
     align-items: center;

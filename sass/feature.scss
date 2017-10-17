@@ -71,6 +71,8 @@
   background-image: url("../img/icon-burger.svg");
   background-repeat: no-repeat;
   background-position: center 62px;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 .feature--icon-gift {
@@ -212,5 +214,29 @@
   .feature--gray {
     padding-top: 27px;
     padding-bottom: 28px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .feature--border {
+    position: relative;
+  }
+
+  .feature--border::before,
+  .feature--border::after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 1px;
+    background-color: #d6d6d6;
+    left: 20px;
+  }
+
+  .feature--border::before {
+    top: -1px;
+  }
+
+  .feature--border::after {
+    bottom: 0;
   }
 }

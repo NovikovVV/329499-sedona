@@ -1,5 +1,5 @@
 .gallery {
-  padding-top: 70px;
+  padding-top: 69px;
   padding-bottom: 35px;
   display: flex;
   flex-direction: row;
@@ -52,11 +52,29 @@
   }
 
   .gallery__item {
-    padding-top: 23px;
+    margin-top: 23px;
+  }
+
+  .gallery__item::before,
+  .gallery__item::after {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 1px;
+    background-color: #e5e5e5;
+  }
+
+  .gallery__item::before {
+    top: -23px;
+    left: -20px;
+  }
+
+  .gallery__item::after {
+    left: -20px;
+    bottom: -1px;
   }
 
   .gallery__text {
     background-color: transparent;
-    outline: 2px solid red;
   }
 }

@@ -22,6 +22,16 @@ html {
   box-sizing: inherit;
 }
 
+* {
+  outline-color: $base-color;
+}
+
+@media (max-width: $desktop-width) {
+  * {
+    outline-color: #f8a21a;
+  }
+}
+
 .page-feedback,
 .page-index,
 .page-photo {

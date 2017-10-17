@@ -7,11 +7,8 @@
 }
 
 .main-navigation__list {
-  padding-top: 0;
-  padding-right: 55px;
-  padding-bottom: 0;
-  padding-left: 75px;
   margin: 0;
+  padding: 0;
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -19,18 +16,6 @@
   justify-content: flex-start;
   align-items: flex-start;
   align-content: flex-start;
-}
-
-.main-navigation__item[data-name="Main-page"] {
-  margin-right: 133px;
-}
-
-.main-navigation__item[data-name="Photo-page"] {
-  margin-right: 353px;
-}
-
-.main-navigation__item[data-name="Feedback-page"] {
-  margin-right: 106px;
 }
 
 .main-navigation__link {
@@ -45,6 +30,7 @@
   padding-left: 15px;
   text-align: center;
   font-family: "PT Sans", "Arial", sans-serif;
+  width: 240px;
 }
 
 .main-navigation__link[href]:hover {
@@ -59,22 +45,13 @@
   color: #766357;
 }
 
+.main-navigation__item--margin-right {
+  margin-right: auto;
+}
+
 @media (max-width: $desktop-width) {
-  .main-navigation__list {
-    padding-left: 35px;
-    padding-right: 12px;
-  }
-
-  .main-navigation__item[data-name="Main-page"] {
-    margin-right: 45px;
-  }
-
-  .main-navigation__item[data-name="Photo-page"] {
-    margin-right: 180px;
-  }
-
-  .main-navigation__item[data-name="Feedback-page"] {
-    margin-right: 18px;
+  .main-navigation__link {
+    width: 153px;
   }
 }
 
@@ -85,10 +62,36 @@
     top: 16px;
     width: 23px;
     height: 22px;
-    background-color: red;
+    background-color: transparent;
     border: none;
     padding: 0;
     display: block;
+  }
+
+  .main-navigation__button::before,
+  .main-navigation__button::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 23px;
+    height: 4px;
+    background-color: #81b3d2;
+    box-shadow: 0 9px 0 0 #81b3d2, 0 18px 0 0 #81b3d2;
+  }
+
+  .main-navigation--open .main-navigation__button::before,
+  .main-navigation--open .main-navigation__button::after {
+    background-color: #ffffff;
+    transform: rotate(45deg);
+    top: 8px;
+    box-shadow: none;
+    width: 30px;
+    left: -4px;
+  }
+
+  .main-navigation--open .main-navigation__button::after {
+    transform: rotate(-45deg);
   }
 
   .main-navigation__button--hideout {
@@ -104,10 +107,6 @@
     display: block;
   }
 
-  .main-navigation__item[data-name] {
-    margin-right: 0;
-  }
-
   .main-navigation__link {
     background-color: $base-color;
     color: #ffffff;
@@ -116,6 +115,7 @@
     font-weight: 700;
     padding-top: 8px;
     padding-bottom: 8px;
+    width: 100%;
   }
 
   .main-navigation__link[href]:hover {
