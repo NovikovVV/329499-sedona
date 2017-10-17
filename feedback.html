@@ -14,7 +14,7 @@
             <span class="visually-hidden">Меню</span>
           </button>
           <ul class="main-navigation__list">
-            <li class="main-navigation__item" data-name="Main-page">
+            <li class="main-navigation__item">
               <a class="main-navigation__link" href="index.html">Главная</a>
             </li>
             <li class="main-navigation__item  main-navigation__item--margin-right">
@@ -74,10 +74,13 @@
             <div class="feedback-form__fieldset  feedback-form__fieldset--contacts-info">
               <div class="feedback-form__legend">Контактная информация:</div>
               <label class="feedback-form__phone-label" for="userPhone">
-                <span class="feedback-form--hidden">Контактный</span> телефон*:
+                <span class="feedback-form--margin-left">
+                  <span class="feedback-form--hidden">Контактный</span> телефон*:
+                </span>
                 <input class="feedback-form__phone-input" type="tel" name="userPhone" value="" id="userPhone" placeholder="Введите телефон" required>
               </label>
-              <label class="feedback-form__email-label" for="userEmail">Электронная почта*:
+              <label class="feedback-form__email-label" for="userEmail">
+                <span class="feedback-form--margin-left">Электронная почта*:</span>
                 <input class="feedback-form__email-input" type="email" name="userEmail" value="" id="userEmail" placeholder="Введите e-mail" required>
               </label>
             </div>
