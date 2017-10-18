@@ -7,6 +7,7 @@
   padding-left: 67px;
   color: #ffffff;
   text-align: center;
+  position: relative;
 }
 
 .feature__wrapper {
@@ -238,5 +239,17 @@
 
   .feature--border::after {
     bottom: 0;
+  }
+
+  .feature--triangle::before {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 37px;
+    background-image: url("../img/bg-triangle.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    top: -22px;
+    left: 0;
   }
 }

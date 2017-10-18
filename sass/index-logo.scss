@@ -2,10 +2,19 @@
   line-height: 0;
   width: 1200px;
   height: 518px;
-  padding-top: 77px;
-  background-image: url("../img/bg-back-desktop@1x.jpg");
   background-repeat: no-repeat;
   position: relative;
+  background-image: url("../img/bg-back-desktop@1x.jpg");
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-desktop@2x.jpg");
+    background-size: 1200px auto;
+  }
+}
+
+.page-photo .index-logo,
+.page-feedback .index-logo {
+  height: 301px;
+  background-position: bottom center;
 }
 
 .index-logo::after {
@@ -22,12 +31,28 @@
 .index-logo__image {
   margin: 0 auto;
   display: block;
+  padding-top: 78px;
 }
 
 @media (max-width: $desktop-width) {
   .index-logo {
     width: 768px;
     height: 518px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 768px auto;
+    }
+  }
+
+  .page-photo .index-logo,
+  .page-feedback .index-logo {
+    height: 290px;
+  }
+
+  .page-photo .index-logo__image,
+  .page-feedback .index-logo__image {
+    padding-top: 94px;
   }
 
   .index-logo::after {
@@ -37,8 +62,36 @@
 
 @media (max-width: $tablet-width) {
   .index-logo {
-    padding-top: 55px;
+    margin-top: 55px;
     width: 320px;
     height: 389px;
+    background-image: url("../img/bg-back-mobile@1x.jpg");
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-mobile@2x.jpg");
+      background-size: cover;
+    }
+    background-position: center center;
+  }
+
+  .page-photo .index-logo,
+  .page-feedback .index-logo {
+    height: 158px;
+  }
+
+  .page-photo .index-logo__image,
+  .page-feedback .index-logo__image {
+    padding-top: 50px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .index-logo__image {
+    padding-top: 89px;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .index-logo::after {
+    left: -440px;
   }
 }
