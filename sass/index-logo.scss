@@ -58,7 +58,8 @@
   }
 
   .index-logo::after {
-    left: -216px;
+    background-image: url("../img/bg-intro-triangle-tablet.svg");
+    width: 768px;
   }
 }
 
@@ -95,6 +96,9 @@
   }
 
   .index-logo::after {
-    left: -440px;
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    width: 320px;
+    height: 27px;
+    background-size: 322px 27px;
   }
 }
