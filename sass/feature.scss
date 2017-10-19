@@ -62,24 +62,45 @@
   padding-top: 160px;
 }
 
-.feature--icon-house {
+.feature--icon-house::before {
+  position: absolute;
+  content: "";
+  width: 75px;
+  height: 72px;
+  top: 60px;
+  left: 161px;
   background-image: url("../img/icon-house.svg");
   background-repeat: no-repeat;
-  background-position: center 60px;
+  background-position: center;
 }
 
 .feature--icon-burger {
-  background-image: url("../img/icon-burger.svg");
-  background-repeat: no-repeat;
-  background-position: center 62px;
   padding-right: 50px;
   padding-left: 50px;
 }
 
-.feature--icon-gift {
+.feature--icon-burger::before {
+  position: absolute;
+  content: "";
+  width: 76px;
+  height: 69px;
+  top: 62px;
+  left: 162px;
+  background-image: url("../img/icon-burger.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.feature--icon-gift::before {
+  position: absolute;
+  content: "";
+  width: 63px;
+  height: 75px;
+  top: 58px;
+  left: 168px;
   background-image: url("../img/icon-gift.svg");
   background-repeat: no-repeat;
-  background-position: center 56px;
+  background-position: center;
 }
 
 .feature__icon {
@@ -151,6 +172,15 @@
     background-color: #ffffff;
     padding-top: 160px;
   }
+
+  .feature--icon-house::before,
+  .feature--icon-burger::before {
+    left: 90px;
+  }
+
+  .feature--icon-gift::before {
+    left: 95px;
+  }
 }
 
 @media (max-width: $tablet-width) {
@@ -199,14 +229,6 @@
     margin-top: 7px;
   }
 
-  .feature--icon-house {
-    background-position: 0 40px;
-  }
-
-  .feature--icon-gift {
-    background-position: 0 20px;
-  }
-
   .feature--icon-gift .feature__title {
     margin: 0;
     margin-top: 7px;
@@ -251,5 +273,29 @@
     background-position: center center;
     top: -22px;
     left: 0;
+  }
+
+  .feature--icon-house::before {
+    width: 39px;
+    height: 37px;
+    top: 26px;
+    left: 21px;
+    background-size: cover;
+  }
+
+  .feature--icon-gift::before {
+    width: 32px;
+    height: 38px;
+    background-size: cover;
+    top: 6px;
+    left: 25px;
+  }
+
+  .feature--icon-burger::before {
+    width: 40px;
+    height: 35px;
+    background-size: cover;
+    top: 13px;
+    left: 18px
   }
 }
