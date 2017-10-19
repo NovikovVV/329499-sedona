@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.min.js" async></script>
   </head>
   <body class="page-index">
     <header class="main-header">
@@ -31,15 +36,15 @@
         <a class="logo">
           <picture>
             <source media="(max-width: 767px)" srcset="img/logo-sedona-mobile.svg">
-            <source media="(max-width: 1199px)" srcset="img/logo-sedona-mobile.svg">
-            <img class="logo__item" src="http://placehold.it/188x96" width="188" height="96" alt="City of Sedona">
+            <source media="(max-width: 1199px)" srcset="img/logo-sedona-tablet.svg">
+            <img class="logo__item" src="img/logo-sedona-desktop.svg" width="188" height="96" alt="Site logo">
           </picture>
         </a>
         <div class="index-logo">
           <picture>
-            <source media="(max-width: 767px)" srcset="http://placehold.it/320x389">
-            <source media="(max-width: 1199px)" srcset="http://placehold.it/768x518">
-            <img class="index-logo__image" src="http://placehold.it/1200x518" alt="Sedona">
+            <source media="(max-width: 767px)" srcset="img/text-sedona-index.svg">
+            <source media="(max-width: 1199px)" srcset="img/text-sedona-index.svg">
+            <img class="index-logo__image" src="img/text-sedona-index.svg" width="460" height="350" alt="Sedona">
           </picture>
         </div>
       </div>
@@ -51,16 +56,16 @@
         <section class="features">
           <h2 class="visually-hidden">Особенности</h2>
           <div class="features-image">
-            <div class="feature">
+            <div class="feature  feature--triangle">
               <p class="feature__title">Настоящий городок</p>
               <b class="feature__number">№1</b>
               <p class="feature__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <div class="feature-image__picture">
               <picture>
-                <source media="(max-width: 767px)" srcset="img/main-city-mobile@1x.jpg">
-                <source media="(max-width: 1199px)" srcset="http://placehold.it/512x256">
-                <img src="http://placehold.it/800x256" alt="Real city">
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/main-city-mobile@1x.jpg 1x, img/main-city-mobile@2x.jpg 2x, img/main-city-mobile@1x.webp 1x, img/main-city-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1199px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x, img/main-city-tablet@1x.webp 1x, img/main-city-tablet@2x.webp 2x">
+                <img class="feature-image__photo" src="img/main-city-desktop@1x.jpg" srcset="img/main-city-desktop@2x.jpg 2x, img/main-city-desktop@1x.webp 1x, img/main-city-desktop@2x.webp 2x" alt="Real city">
               </picture>
             </div>
           </div>
@@ -88,9 +93,9 @@
             </div>
             <div class="feature-image__picture">
               <picture>
-                <source media="(max-width: 767px)" srcset="img/main-bridge-mobile@1x.jpg">
-                <source media="(max-width: 1199px)" srcset="http://placehold.it/512x256">
-                <img src="http://placehold.it/800x256" alt="The Devil's Bridge">
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/main-bridge-mobile@1x.jpg 1x, img/main-bridge-mobile@2x.jpg 2x, img/main-bridge-mobile@1x.webp 1x, img/main-bridge-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1199px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x, img/main-bridge-tablet@1x.webp 1x, img/main-bridge-tablet@2x.webp 2x">
+                <img class="feature-image__photo" src="img/main-bridge-desktop@1x.jpg" srcset="img/main-bridge-desktop@2x.jpg 2x, img/main-bridge-desktop@1x.webp 1x, img/main-bridge-desktop@2x.webp 2x" alt="The Devil's Bridge">
               </picture>
             </div>
           </div>
@@ -120,11 +125,7 @@
         <section class="map">
           <h2 class="visually-hidden">Карта</h2>
           <div class="map__item">
-            <picture>
-              <source media="(max-width: 767px)" srcset="img/bg-map-mobile@1x.jpg">
-              <source media="(max-width: 1199px)" srcset="http://placehold.it/768x350">
-              <img src="http://placehold.it/1200x350" alt="Map">
-            </picture>
+            <img class="map__mark" src="img/icon-map-marker.svg" width="27" height="27" alt="Map mark">
           </div>
         </section>
       </div>

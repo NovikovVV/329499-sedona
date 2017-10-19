@@ -46,7 +46,7 @@
 }
 
 .main-navigation__item--margin-right {
-  margin-right: auto;
+  margin-right: 20%;
 }
 
 @media (max-width: $desktop-width) {
@@ -59,13 +59,18 @@
   .main-navigation__button {
     position: absolute;
     right: 20px;
-    top: 16px;
+    top: -38px;
     width: 23px;
     height: 22px;
     background-color: transparent;
     border: none;
     padding: 0;
     display: block;
+    z-index: 100;
+  }
+
+  .main-navigation--open .main-navigation__button {
+    top: 18px;
   }
 
   .main-navigation__button::before,
@@ -129,5 +134,9 @@
 
   .main-navigation__link--active {
     color: #766357;
+  }
+
+  .main-navigation__item--margin-right {
+    margin-right: 0;
   }
 }

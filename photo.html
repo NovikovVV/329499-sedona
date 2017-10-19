@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.min.js" async></script>
   </head>
   <body class="page-photo">
     <header class="main-header">
@@ -31,15 +36,15 @@
         <a class="logo" href="index.html">
           <picture>
             <source media="(max-width: 767px)" srcset="img/logo-sedona-mobile.svg">
-            <source media="(max-width: 1199px)" srcset="img/logo-sedona-mobile.svg">
-            <img class="logo__item" src="http://placehold.it/188x96" width="188" height="96" alt="City of Sedona">
+            <source media="(max-width: 1199px)" srcset="img/logo-sedona-tablet.svg">
+            <img class="logo__item" src="img/logo-sedona-desktop.svg" width="188" height="96" alt="Site logo">
           </picture>
         </a>
         <div class="index-logo">
           <picture>
-            <source media="(max-width: 767px)" srcset="http://placehold.it/320x158">
-            <source media="(max-width: 1199px)" srcset="http://placehold.it/768x290">
-            <img class="index-logo__image" src="http://placehold.it/1200x301" alt="Sedona">
+            <source media="(max-width: 767px)" srcset="img/text-sedona.svg">
+            <source media="(max-width: 1199px)" srcset="img/text-sedona.svg">
+            <img class="index-logo__image" src="img/text-sedona.svg" width="460" height="79" alt="Sedona">
           </picture>
         </div>
       </div>
@@ -53,9 +58,9 @@
           <div class="gallery__item">
             <a class="gallery__link" href="#">
               <picture>
-                <source media="(max-width: 767px)" srcset="img/photo-sunset-mobile@1x.jpg">
-                <source media="(max-width: 1199px)" srcset="http://placehold.it/648x400">
-                <img class="gallery__photo" src="http://placehold.it/1200x400" alt="Photo">
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/photo-sunset-mobile@1x.jpg 1x, img/photo-sunset-mobile@2x.jpg 2x, img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1199px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x, img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x">
+                <img class="gallery__photo" src="img/photo-sunset-desktop@1x.jpg" srcset="img/photo-sunset-desktop@2x.jpg 2x, img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x" alt="Photo">
               </picture>
             </a>
             <div class="gallery__text  photo-info">
@@ -69,9 +74,9 @@
           <div class="gallery__item">
             <a class="gallery__link" href="#">
               <picture>
-                <source media="(max-width: 767px)" srcset="img/photo-cactus-mobile@1x.jpg">
-                <source media="(max-width: 1199px)" srcset="http://placehold.it/324x267">
-                <img class="gallery__photo" src="http://placehold.it/400x267" alt="Photo">
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/photo-cactus-mobile@1x.jpg 1x, img/photo-cactus-mobile@2x.jpg 2x, img/photo-cactus-mobile@1x.webp 1x, img/photo-cactus-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1199px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x, img/photo-cactus-tablet@1x.webp 1x, img/photo-cactus-tablet@2x.webp 2x">
+                <img class="gallery__photo" src="img/photo-cactus-desktop@1x.jpg" srcset="img/photo-cactus-desktop@2x.jpg 2x, img/photo-cactus-desktop@1x.webp 1x, img/photo-cactus-desktop@2x.webp 2x" alt="Photo">
               </picture>
             </a>
             <div class="gallery__text  photo-info">
@@ -85,9 +90,9 @@
           <div class="gallery__item">
             <a class="gallery__link" href="#">
               <picture>
-                <source media="(max-width: 767px)" srcset="img/photo-roads-mobile@1x.jpg">
-                <source media="(max-width: 1199px)" srcset="http://placehold.it/324x267">
-                <img class="gallery__photo" src="http://placehold.it/400x267" alt="Photo">
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/photo-roads-mobile@1x.jpg 1x, img/photo-roads-mobile@2x.jpg 2x, img/photo-roads-mobile@1x.webp 1x, img/photo-roads-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1199px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x, img/photo-roads-tablet@1x.webp 1x, img/photo-roads-tablet@2x.webp 2x">
+                <img class="gallery__photo" src="img/photo-roads-desktop@1x.jpg" srcset="img/photo-roads-desktop@2x.jpg 2x, img/photo-roads-desktop@1x.webp 1x, img/photo-roads-desktop@2x.webp 2x" alt="Photo">
               </picture>
             </a>
             <div class="gallery__text  gallery__text--gray  photo-info">
@@ -101,9 +106,9 @@
           <div class="gallery__item">
             <a class="gallery__link" href="#">
               <picture>
-                <source media="(max-width: 767px)" srcset="img/photo-bridge-mobile@1x.jpg">
-                <source media="(max-width: 1199px)" srcset="http://placehold.it/324x267">
-                <img class="gallery__photo" src="http://placehold.it/400x267" alt="Photo">
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/photo-bridge-mobile@1x.jpg 1x, img/photo-bridge-mobile@2x.jpg 2x, img/photo-bridge-mobile@1x.webp 1x, img/photo-bridge-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1199px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x, img/photo-bridge-tablet@1x.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
+                <img class="gallery__photo" src="img/photo-bridge-desktop@1x.jpg" srcset="img/photo-bridge-desktop@2x.jpg 2x, img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x" alt="Photo">
               </picture>
             </a>
             <div class="gallery__text  photo-info">
@@ -121,9 +126,9 @@
           <div class="video">
             <div class="video__item">
               <picture>
-                <source media="(max-width: 767px)" srcset="img/video-mobile@1x.jpg">
-                <source media="(max-width: 1199px)" srcset="http://placehold.it/648x500">
-                <img class="gallery__photo" src="http://placehold.it/800x500" alt="Photo">
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/video-mobile@1x.jpg 1x, img/video-mobile@2x.jpg 2x, img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1199px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x, img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+                <img class="gallery__photo" src="img/video-desktop@1x.jpg" srcset="img/video-desktop@2x.jpg 2x, img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x" alt="Video">
               </picture>
               <div class="video__controls">
                 <div class="video__length">

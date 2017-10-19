@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.min.js" async></script>
   </head>
   <body class="page-feedback">
     <header class="main-header">
@@ -14,7 +19,7 @@
             <span class="visually-hidden">Меню</span>
           </button>
           <ul class="main-navigation__list">
-            <li class="main-navigation__item" data-name="Main-page">
+            <li class="main-navigation__item">
               <a class="main-navigation__link" href="index.html">Главная</a>
             </li>
             <li class="main-navigation__item  main-navigation__item--margin-right">
@@ -31,15 +36,15 @@
         <a class="logo" href="index.html">
           <picture>
             <source media="(max-width: 767px)" srcset="img/logo-sedona-mobile.svg">
-            <source media="(max-width: 1199px)" srcset="img/logo-sedona-mobile.svg">
-            <img class="logo__item" src="http://placehold.it/188x96" width="188" height="96" alt="City of Sedona">
+            <source media="(max-width: 1199px)" srcset="img/logo-sedona-tablet.svg">
+            <img class="logo__item" src="img/logo-sedona-desktop.svg" width="188" height="96" alt="Site logo">
           </picture>
         </a>
         <div class="index-logo">
           <picture>
-            <source media="(max-width: 767px)" srcset="http://placehold.it/320x158">
-            <source media="(max-width: 1199px)" srcset="http://placehold.it/768x290">
-            <img class="index-logo__image" src="http://placehold.it/1200x301" alt="Sedona">
+            <source media="(max-width: 767px)" srcset="img/text-sedona.svg">
+            <source media="(max-width: 1199px)" srcset="img/text-sedona.svg">
+            <img class="index-logo__image" src="img/text-sedona.svg" width="460" height="79" alt="Sedona">
           </picture>
         </div>
       </div>
@@ -74,10 +79,13 @@
             <div class="feedback-form__fieldset  feedback-form__fieldset--contacts-info">
               <div class="feedback-form__legend">Контактная информация:</div>
               <label class="feedback-form__phone-label" for="userPhone">
-                <span class="feedback-form--hidden">Контактный</span> телефон*:
+                <span class="feedback-form--margin-left">
+                  <span class="feedback-form--hidden">Контактный</span> телефон*:
+                </span>
                 <input class="feedback-form__phone-input" type="tel" name="userPhone" value="" id="userPhone" placeholder="Введите телефон" required>
               </label>
-              <label class="feedback-form__email-label" for="userEmail">Электронная почта*:
+              <label class="feedback-form__email-label" for="userEmail">
+                <span class="feedback-form--margin-left">Электронная почта*:</span>
                 <input class="feedback-form__email-input" type="email" name="userEmail" value="" id="userEmail" placeholder="Введите e-mail" required>
               </label>
             </div>

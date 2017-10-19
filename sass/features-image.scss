@@ -20,6 +20,8 @@
 .feature-image__picture {
   line-height: 0;
   width: 800px;
+  height: 256px;
+  overflow: hidden;
 }
 
 @media (max-width: $desktop-width) {
@@ -53,5 +55,6 @@
   .feature-image__picture {
     line-height: 0;
     width: 320px;
+    height: 260px;
   }
 }
