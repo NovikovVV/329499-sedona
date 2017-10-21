@@ -9,10 +9,10 @@
       // Picture element HTML5 shiv
       document.createElement( "picture" );
     </script>
-    <script src="js/picturefill.min.js" async></script>
+    <script src="js/picturefill.min.js" async=""></script>
   </head>
   <body class="page-feedback">
-    <div style="display: none">
+    <div style="display:none">
       <include src="build/img/sprite.svg"></include>
     </div>
     <header class="main-header">
@@ -60,7 +60,7 @@
           <div class="feedback-form__wrapper">
             <div class="feedback-form__fieldset  feedback-form__fieldset--impression">
               <div class="feedback-form__legend">Ваше общее впечатление:</div>
-              <input class="feedback-form__radio-input  visually-hidden" type="radio" name="impression" value="good" id="radioInput1" checked>
+              <input class="feedback-form__radio-input  visually-hidden" type="radio" name="impression" value="good" id="radioInput1" checked="">
               <label class="feedback-form__radio-label" for="radioInput1">Скорее положительное</label>
               <input class="feedback-form__radio-input  visually-hidden" type="radio" name="impression" value="bad" id="radioInput2">
               <label class="feedback-form__radio-label" for="radioInput2">Скорее отрицательное</label>
@@ -70,10 +70,10 @@
             <div class="feedback-form__fieldset  feedback-form__fieldset--user-info">
               <div class="feedback-form__legend">Представьтесь:</div>
               <label class="feedback-form__text-label" for="name">Имя*:
-                <input class="feedback-form__text-input" type="text" name="name" value="Петр" id="name" placeholder="Ваше имя" required>
+                <input class="feedback-form__text-input" type="text" name="name" value="Петр" id="name" placeholder="Ваше имя" required="">
               </label>
               <label class="feedback-form__text-label" for="secondName">Фамилия*:
-                <input class="feedback-form__text-input" type="text" name="secondName" value="Иванов" id="secondName" placeholder="Ваша фамилия" required>
+                <input class="feedback-form__text-input" type="text" name="secondName" value="Иванов" id="secondName" placeholder="Ваша фамилия" required="">
               </label>
               <label class="feedback-form__text-label" for="patronymic">Отчество:
                 <input class="feedback-form__text-input" type="text" name="patronymic" value="Александрович" id="patronymic" placeholder="Ваше отчество">
@@ -85,20 +85,20 @@
                 <span class="feedback-form--margin-left">
                   <span class="feedback-form--hidden">Контактный</span> телефон*:
                 </span>
-                <input class="feedback-form__phone-input" type="tel" name="userPhone" value="" id="userPhone" placeholder="Введите телефон" required>
+                <input class="feedback-form__phone-input" type="tel" name="userPhone" value="" id="userPhone" placeholder="Введите телефон" required="">
               </label>
               <label class="feedback-form__email-label" for="userEmail">
                 <span class="feedback-form--margin-left">Электронная почта*:</span>
-                <input class="feedback-form__email-input" type="email" name="userEmail" value="" id="userEmail" placeholder="Введите e-mail" required>
+                <input class="feedback-form__email-input" type="email" name="userEmail" value="" id="userEmail" placeholder="Введите e-mail" required="">
               </label>
             </div>
             <div class="feedback-form__fieldset  feedback-form__fieldset--place">
               <div class="feedback-form__legend">Посещенные достопримечательности:</div>
-              <input class="feedback-form__checkbox-input  visually-hidden" type="checkbox" name="place" value="Devils bridge" id="checkboxInput1" checked>
+              <input class="feedback-form__checkbox-input  visually-hidden" type="checkbox" name="place" value="Devils bridge" id="checkboxInput1" checked="">
               <label class="feedback-form__checkbox-label" for="checkboxInput1">Мост Дьявола</label>
-              <input class="feedback-form__checkbox-input  visually-hidden" type="checkbox" name="place" value="Mountain bell" id="checkboxInput2" checked>
+              <input class="feedback-form__checkbox-input  visually-hidden" type="checkbox" name="place" value="Mountain bell" id="checkboxInput2" checked="">
               <label class="feedback-form__checkbox-label" for="checkboxInput2">Гора-Колокол</label>
-              <input class="feedback-form__checkbox-input  visually-hidden" type="checkbox" name="place" value="Slide Park" id="checkboxInput3" checked>
+              <input class="feedback-form__checkbox-input  visually-hidden" type="checkbox" name="place" value="Slide Park" id="checkboxInput3" checked="">
               <label class="feedback-form__checkbox-label" for="checkboxInput3">Слайд-парк</label>
               <input class="feedback-form__checkbox-input  visually-hidden" type="checkbox" name="place" value="Red rocks" id="checkboxInput4">
               <label class="feedback-form__checkbox-label" for="checkboxInput4">Красные скалы</label>
