@@ -1,0 +1,26 @@
+.repeat {
+  width: 16px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  order: -3;
+  margin-right: 40px;
+  padding: 0;
+}
+
+.repeat__image {
+  fill: #ffffff;
+}
+
+@media (max-width: $tablet-width) {
+  .repeat {
+    margin-top: 22px;
+    margin-left: 25px;
+    margin-right: auto;
+  }
+
+  .repeat__image {
+    fill: #5c6870;
+  }
+}

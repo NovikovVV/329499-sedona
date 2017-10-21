@@ -1,0 +1,23 @@
+.full-screen {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.full-screen__image {
+  fill: #ffffff;
+}
+
+@media (max-width: $tablet-width) {
+  .full-screen {
+    margin-top: 22px;
+    margin-right: 23px;
+  }
+
+  .full-screen__image {
+    fill: #5c6870;
+  }
+}
