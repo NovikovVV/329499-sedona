@@ -84,6 +84,17 @@ module.exports = function(grunt) {
       build: ["build"]
     },
 
+    uglify: {
+      style: {
+        options: {
+          report: "gzip"
+        },
+        files: {
+          "build/js/script.min.js": ["build/js/script.js"]
+        }
+      }
+    },
+
     sass: {
       style: {
         files: {
@@ -131,7 +142,7 @@ module.exports = function(grunt) {
         files: ["sass/**/*.{scss,sass}"],
         tasks: ["sass", "postcss", "csso"]
       }
-    },
+    }
   });
 
   grunt.registerTask("serve", ["browserSync", "watch"]);
@@ -141,6 +152,7 @@ module.exports = function(grunt) {
     "sass",
     "postcss",
     "csso",
+    "uglify",
     "svgstore",
     "posthtml"
   ])
