@@ -36,7 +36,8 @@
 
 .feedback-form__text-input,
 .feedback-form__phone-input,
-.feedback-form__email-input {
+.feedback-form__email-input,
+.feedback-form__textarea {
   font: inherit;
   font-size: 18px;
   line-height: 26px;
@@ -45,7 +46,8 @@
 
 .feedback-form__text-input::placeholder,
 .feedback-form__phone-input::placeholder,
-.feedback-form__email-input::placeholder {
+.feedback-form__email-input::placeholder,
+.feedback-form__textarea::placeholder {
   font: inherit;
   font-size: 18px;
   line-height: 26px;
