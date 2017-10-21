@@ -35,6 +35,11 @@
   padding-top: 78px;
 }
 
+.page-photo .index-logo__image,
+.page-feedback .index-logo__image {
+  padding-top: 100px;
+}
+
 @media (max-width: $desktop-width) {
   .index-logo {
     width: 768px;
