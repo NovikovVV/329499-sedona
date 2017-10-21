@@ -5,7 +5,9 @@
 *.pdf
 *.psd
 *.sublime*
+build/
 css/*.css
+sass/normalize.scss
 node_modules/
 npm-debug.*
 Thumbs.db

@@ -13,9 +13,14 @@
   margin-left: 11px;
   width: 27px;
   height: 34px;
-  background-image: url("../img/logo-htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
+}
+
+.developer__image:hover {
+  fill: #81b3d2;
+}
+
+.developer__image:active {
+  opacity: 0.3;
 }
 
 @media (max-width: $tablet-width) {

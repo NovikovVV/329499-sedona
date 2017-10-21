@@ -36,7 +36,8 @@
 
 .feedback-form__text-input,
 .feedback-form__phone-input,
-.feedback-form__email-input {
+.feedback-form__email-input,
+.feedback-form__textarea {
   font: inherit;
   font-size: 18px;
   line-height: 26px;
@@ -45,7 +46,8 @@
 
 .feedback-form__text-input::placeholder,
 .feedback-form__phone-input::placeholder,
-.feedback-form__email-input::placeholder {
+.feedback-form__email-input::placeholder,
+.feedback-form__textarea::placeholder {
   font: inherit;
   font-size: 18px;
   line-height: 26px;
@@ -284,6 +286,7 @@
   padding-bottom: 15px;
   padding-left: 80px;
   margin-right: auto;
+  margin-bottom: 20px;
 }
 
 .feedback-form__checkbox-label:nth-of-type(4n) {
@@ -323,7 +326,7 @@
 
 .feedback-form__fieldset--emotions {
   width: 100%;
-  margin-top: 65px;
+  margin-top: 45px;
 }
 
 .feedback-form__fieldset--emotions .feedback-form__legend {

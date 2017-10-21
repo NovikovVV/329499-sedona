@@ -6,6 +6,7 @@
 .map__item {
   width: 1200px;
   height: 350px;
+  z-index: 50;
   position: relative;
   background-image: url("../img/bg-map-desktop@1x.jpg");
 
@@ -15,11 +16,19 @@
   }
 }
 
+.map__google {
+  width: 1200px;
+  height: 350px;
+  z-index: 100;
+  border: none;
+}
+
 .map__mark {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
+  z-index: -50;
 }
 
 @media (max-width: $desktop-width) {
@@ -36,6 +45,10 @@
       background-size: 768px auto;
     }
   }
+
+  .map__google {
+    width: 768px;
+  }
 }
 
 @media (max-width: $tablet-width) {
@@ -47,5 +60,9 @@
       background-image: url("../img/bg-map-mobile@2x.jpg");
       background-size: 320px auto;
     }
+  }
+
+  .map__google {
+    width: 320px;
   }
 }

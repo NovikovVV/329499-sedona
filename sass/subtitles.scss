@@ -1,0 +1,24 @@
+.subtitles {
+  width: 32px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-right: 30px;
+  padding: 0;
+}
+
+.subtitles__image {
+  fill: #ffffff;
+}
+
+@media (max-width: $tablet-width) {
+  .subtitles {
+    margin-top: 23px;
+    margin-right: 31px;
+  }
+
+  .subtitles__image {
+    fill: #5c6870;
+  }
+}

@@ -37,13 +37,17 @@
   margin-bottom: auto;
   margin-top: auto;
   width: 72px;
+  padding-left: 8px;
   padding-top: 5px;
   padding-bottom: 5px;
-  padding-left: 40px;
-  background-image: url("../img/icon-like.svg");
-  background-repeat: no-repeat;
-  background-position: 7px 4px;
   cursor: pointer;
+}
+
+.photo-info__like {
+  display: inline-block;
+  vertical-align: top;
+  fill: #ffffff;
+  margin-right: 5px;
 }
 
 @media (max-width: $desktop-width) {
@@ -69,6 +73,10 @@
     margin-bottom: auto;
     margin-top: auto;
   }
+
+  .photo-info__like {
+    fill: #a3a3a3;
+  }
 }
 
 @media (max-width: $tablet-width) {
@@ -83,7 +91,12 @@
   .photo-info__counter {
     margin: 0;
     margin-top: 4px;
-    padding-left: 36px;
+    padding-left: 0;
     background-position: 0 3px;
+  }
+
+  .photo-info__like {
+    fill: #b2b2b2;
+    margin-right: 10px;
   }
 }

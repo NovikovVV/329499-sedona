@@ -21,24 +21,23 @@
   background-color: $base-color;
   text-decoration: none;
   color: #ffffff;
+  position: relative;
 }
 
-.social-links__link--twitter {
-  background-image: url("../img/icon-twitter.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.social-links__link--facebook {
-  background-image: url("../img/icon-facebook.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
+.social-links__link--twitter,
+.social-links__link--facebook,
 .social-links__link--youtube {
-  background-image: url("../img/icon-youtube.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
+  fill: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.social-links__link--twitter:active,
+.social-links__link--facebook:active,
+.social-links__link--youtube:active {
+  opacity: 0.3;
 }
 
 .social-links__link:hover {
