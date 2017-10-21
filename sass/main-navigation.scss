@@ -121,6 +121,9 @@
     padding-top: 8px;
     padding-bottom: 8px;
     width: 100%;
+    height: 56px;
+    border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
   }
 
   .main-navigation__link[href]:hover {
