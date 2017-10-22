@@ -1,0 +1,28 @@
+.gallery {
+  padding-top: 69px;
+  padding-bottom: 35px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+@media (max-width: $desktop-width) {
+  .gallery {
+    padding-top: 67px;
+    padding-right: 60px;
+    padding-bottom: 33px;
+    padding-left: 60px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .gallery {
+    padding-top: 28px;
+    padding-right: 20px;
+    padding-bottom: 17px;
+    padding-left: 20px;
+  }
+}
