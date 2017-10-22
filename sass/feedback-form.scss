@@ -358,7 +358,7 @@
   margin-left: auto;
 }
 
-.feedback-form--hidden {
+.feedback-form__hidden-text {
   display: none;
 }
 
@@ -514,7 +514,7 @@
     margin-top: 57px;
   }
 
-  .feedback-form--hidden {
+  .feedback-form__hidden-text {
     display: inline;
   }
 
@@ -523,7 +523,7 @@
     outline-color: #f8a21a;
   }
 
-  .feedback-form--margin-left {
+  .feedback-form__label-text--margin-left {
     margin-left: 20px;
   }
 }
