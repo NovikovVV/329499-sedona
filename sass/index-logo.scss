@@ -5,6 +5,7 @@
   background-repeat: no-repeat;
   position: relative;
   background-image: url("../img/bg-back-desktop@1x.jpg");
+  background-color: #6188af;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-desktop@2x.jpg");
@@ -44,6 +45,7 @@
   .index-logo {
     width: 768px;
     height: 518px;
+    background-color: #6188af;
     background-image: url("../img/bg-back-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -73,6 +75,7 @@
     margin-top: 55px;
     width: 320px;
     height: 389px;
+    background-color: #6188af;
     background-image: url("../img/bg-back-mobile@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
