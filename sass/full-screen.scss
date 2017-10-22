@@ -20,4 +20,12 @@
   .full-screen__image {
     fill: #5c6870;
   }
+
+  .full-screen__image:hover {
+    fill: #333333;
+  }
+
+  .full-screen__image:active {
+    opacity: 0.3;
+  }
 }

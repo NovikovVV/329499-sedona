@@ -23,4 +23,12 @@
   .repeat__image {
     fill: #5c6870;
   }
+
+  .repeat__image:hover {
+    fill: #333333;
+  }
+
+  .repeat__image:active {
+    opacity: 0.3;
+  }
 }
