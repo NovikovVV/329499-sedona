@@ -21,4 +21,12 @@
   .subtitles__image {
     fill: #5c6870;
   }
+
+  .subtitles__image:hover {
+    fill: #333333;
+  }
+
+  .subtitles__image:active {
+    opacity: 0.3;
+  }
 }
